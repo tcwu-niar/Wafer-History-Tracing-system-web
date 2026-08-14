@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晶圓歷史紀錄系統 (Wafer History)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>晶圓歷史紀錄系統</h1>
+        <p class="subtitle">點擊下方生產站點，將自動開啟新分頁，顯示該站點所屬 Group 的 SPC 管制圖</p>
+        
+        <!-- 模擬的 Wafer History 站點列表 -->
+        <div class="station-list">
+            <button class="station-btn" onclick="handleStationClick('PHOTO_01')">
+                <span class="station-name">黃光一站 (PHOTO_01)</span>
+                <span class="view-spc">查看 SPC 📊</span>
+            </button>
+            <button class="station-btn" onclick="handleStationClick('ETCH_02')">
+                <span class="station-name">蝕刻二站 (ETCH_02)</span>
+                <span class="view-spc">查看 SPC 📊</span>
+            </button>
+            <button class="station-btn" onclick="handleStationClick('THICK_05')">
+                <span class="station-name">薄膜量測五站 (THICK_05)</span>
+                <span class="view-spc">查看 SPC 📊</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
